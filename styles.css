@@ -124,7 +124,7 @@ body {
 }
 
 .social-icon:hover {
-    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%, 0);
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 8px 20px var(--shadow);
 }
