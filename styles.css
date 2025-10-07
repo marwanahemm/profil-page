@@ -2,11 +2,11 @@
    VARIABLES CSS
    ======================================== */
 :root {
-    --primary: #4a90e2;
-    --primary-hover: #357abd;
-    --bg: #f5f7fa;
-    --card-bg: #fff;
-    --text: #2c3e50;
+    --primary: hsl(221, 53%, 31%);
+    --primary-hover: hsl(200, 86%, 25%);
+    --bg: hsl(13, 16%, 77%);
+    --card-bg: hsl(0, 21%, 93%);
+    --text: hsl(241, 38%, 24%);
     --text-secondary: #7f8c8d;
     --shadow: hsl(254,80%,55%);
     --radius: 20px;
@@ -48,13 +48,13 @@ body {
     border-radius: var(--radius);
     padding: 40px 30px;
     text-align: center;
-    box-shadow: 0 15px 50px rgba(1, 18, 255, 0.25), 0 5px 15px rgba(68, 0, 255, 0.719);
+    box-shadow: 0 15px 50px hsl(254, 76%, 30%), 0 5px 15px hsla(221, 77%, 28%, 0.712);
     transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .profile-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 70px rgba(0,0,0,0.35), 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 25px 70px hsl(0,0%,0%), 0 10px 25px hsl(0,0%,0%);
 }
 
 /* ========================================
@@ -124,22 +124,22 @@ body {
 }
 
 .social-icon:hover {
-    color: white;
+    color: hsl(0, 0%, 100%);
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 8px 20px var(--shadow);
 }
 
 /* Couleurs spécifiques par réseau social */
-.social-icon:nth-child(1):hover { background: #0077b5; } /* LinkedIn */
-.social-icon:nth-child(2):hover { background: #333; }    /* GitHub */
-.social-icon:nth-child(3):hover { background: #000; }    /* X/Twitter */
+.social-icon:nth-child(1):hover { background: hsl(201, 95%, 33%); } /* LinkedIn */
+.social-icon:nth-child(2):hover { background: hsl(0, 3%, 14%, 0.137); }    /* GitHub */
+.social-icon:nth-child(3):hover { background: hsl(0, 0%, 0%); }    /* X/Twitter */
 
 /* ========================================
    BOUTON CONTACT
    ======================================== */
 .contact-button {
     background: var(--primary);
-    color: white;
+    color: hsl(0, 0%, 100%);
     border: none;
     padding: 14px 40px;
     font-size: 16px;
@@ -147,16 +147,16 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all var(--transition);
-    box-shadow: 0 4px 15px rgba(74,144,226,0.3);
+    box-shadow: 0 4px 15px hsl(244, 29%, 40%);
 }
 
 .contact-button:hover {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 30px rgba(102,126,234,0.5);
+    box-shadow: 0 10px 30px hsl(272, 46%, 26%);
 }
 
 .contact-button:active {
     transform: translateY(-1px) scale(1.02);
-    box-shadow: 0 5px 15px rgba(74,144,226,0.4);
+    box-shadow: 0 5px 15px hsla(249, 89%, 24%, 0.452);
 }
